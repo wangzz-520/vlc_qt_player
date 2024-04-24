@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZPlayerClass</class>
+ <widget class="QWidget" name="ZPlayerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ZPlayer</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,20">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="TitleView" name="TitleWidget" native="true"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="TreeView" name="TreeWidget" native="true"/>
+     </item>
+     <item>
+      <widget class="PlayerView" name="PlayerWidget" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>PlayerView</class>
+   <extends>QWidget</extends>
+   <header>playerview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TitleView</class>
+   <extends>QWidget</extends>
+   <header>titleview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TreeView</class>
+   <extends>QWidget</extends>
+   <header>treeview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ZPlayer.qrc"/>
+ </resources>
+ <connections/>
+</ui>
